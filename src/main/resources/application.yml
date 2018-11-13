@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: RibbonClient
+
+server:
+  port: 19090
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:18090/eureka/
+
