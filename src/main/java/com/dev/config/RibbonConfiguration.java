@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootConfiguration
-public class Configuration {
+public class RibbonConfiguration {
 
 
     @Bean
@@ -14,5 +14,7 @@ public class Configuration {
     RestTemplate restTemplate(){
         return new RestTemplate();
     }
+
+
 
 }
